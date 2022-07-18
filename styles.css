@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
 body {
+    background-color: rgb(223, 212, 197);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,43 +11,85 @@ body {
     background-color: antiquewhite;
     height: 75px;
     width: 75px;
-    border: solid 1px black;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px 2px rgb(36, 35, 35);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 
 .row {
     display: flex;
+    justify-content: end;
 }
 
+/* .row > .clear {
+    display: flex;
+    justify-content: end;
+} */
+
 .zero {
-    width: 66%;
+    width: 160px;
+}
+
+.operator {
+    background-color: rgb(224, 147, 2);
+    color: white;
+}
+
+.equal {
+    background-color: rgb(218, 3, 3);
+    color: white;
 }
 
 #calculator-body {
-    padding: 10px;
-    background-color: gray;
+    padding: 15px;
+    background-color: rgb(61, 61, 61);
     height: max-content;
     width: max-content;
-    border: solid 1px black;
+    box-shadow: 12px 12px 15px 7px rgb(99, 99, 99);
+    border-top: solid 2px rgb(206, 205, 205);
+    border-left: solid 2px rgb(206, 205,205);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 #display {
-    background-color: lightgrey;
-    height: 75px;
+    background-color: rgb(171, 187, 176);
+    height: 65px;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 15px 1px gray inset;
+    border: 2px solid rgb(109, 109, 109);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#display-text {
+    margin: 5px;
+    font-size: 45px;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 #buttons {
     display: flex;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 #number-pad {
     display: flex;
     flex-direction: column-reverse;
+}
+
+#operator-pad {
+    display: flex;
+    flex-direction: column;
 }
