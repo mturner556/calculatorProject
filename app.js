@@ -74,15 +74,27 @@ for (let i = 0; i < operatorButton.length; i++) {
 // evaluate the operate button when the equal button is clicked
 equalButton.addEventListener('click', () => {
     if (operator === '+') {
+        previousDisplayNumber.textContent = previousNum + " " + operator + " " + currentNum;
         currentDisplayNumber.textContent = operate(previousNum, currentNum, add);
+        currentNum = '';
+        previousNum = '';
     } else if (operator === '-') {
+        previousDisplayNumber.textContent = previousNum + " " + operator + " " + currentNum;
         currentDisplayNumber.textContent = operate(previousNum, currentNum, subtract);
+        currentNum = '';
+        previousNum = '';
     } else if (operator === 'x') {
+        previousDisplayNumber.textContent = previousNum + " " + operator + " " + currentNum;
         currentDisplayNumber.textContent = operate(previousNum, currentNum, multiply);
+        currentNum = '';
+        previousNum = '';
     } else if (operator === '÷') {
+        previousDisplayNumber.textContent = previousNum + " " + operator + " " + currentNum;
         currentDisplayNumber.textContent = operate(previousNum, currentNum, divide);
+        currentNum = '';
+        previousNum = '';
     } else {
-        console.log('error');
+        console.log('errorT');
     }
 });
 
